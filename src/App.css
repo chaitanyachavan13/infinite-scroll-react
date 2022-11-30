@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgba(255, 255, 255, 0.87);
+  background: rgb(32, 35, 41);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.carddetails {
+  /* display: flex; */
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+}
+
+.alive {
+  color: green;
+}
+
+.dead {
+  color: red;
+}
+
+.unknown {
+  color: gray;
+}
+
+.card {
+  margin: 1rem auto;
+  border-radius: 7px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  background: rgb(60, 62, 68);
+  box-shadow: 5px 5px 25px black;
+  object-fit:cover;
+}
+
+.card>img {
+  /* width: 200px; */
+  height: 100%;
+  /* width: 250px; */
+}
+
+
+.carddetails p {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 5px 10px;
+  justify-content: flex-start;
+}
+
+
+.CharacterList {
+  overflow-y: scroll; /*IMP*/
+  height: 100vh; /*IMP*/
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardname{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 20px !important;
+}
+
+.cardlastlocation{
+  color: gray !important;
+  font-size: small !important;
+
+}
+.cardlastlocation span{
+  color: white !important;
+ 
+}
+
+.cardseen{
+  color: gray !important;
+  font-size: small !important;
+}
+.cardseen span{
+  color: white !important;
+ 
+}
+
+
+
+@media screen and (max-width:575px) {
+  .carddetails {  
+    padding-top: 12px;
+  }
+  .CharacterList{text-align: center;}
+  .card {
+    text-align: center;
+    flex-direction: column;
+    display: grid;
+    /* display: inline flow-root list-item; */
+  }
+}
+
+@media screen and (max-width:768px) {
+  .carddetails {  
+    padding-top: 12px;
+    
+  }
+  .CharacterList{text-align: center;}
+  .card {
+    text-align: center;
+    flex-direction: column;
+    display: inline flow-root list-item;
+  }
+}
+@media screen and (max-width:992px) {
+  .carddetails {  
+    padding-top: 12px;
+    
+  }
+  .CharacterList{text-align: center;}
+  .card {
+    text-align: center;
+    flex-direction: column;
+    justify-content: start;
+    display: inline flow-root list-item;
+  }
+}
